@@ -102,6 +102,23 @@ h1 {
     border-color: var(--color-secundario);
 }
 
+/* footer css */
+.footer-custom {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-text-orange {
+    color: #FFA500;
+}
+.footer-logo {
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+/* footer css */
+
 .container-soporte{
     padding: 2rem;
     background-color: var(--color-cuaternario);
