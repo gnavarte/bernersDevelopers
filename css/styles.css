@@ -1,0 +1,78 @@
+:root{
+    --color-primario: #001233;
+    --color-secundario: #ff5200;
+    --color-terciario: #EFE0CA;
+    --color-cuaternario: #F9F3EA;
+    --color-quinario: #f9f3ea;
+
+    --font-logo:  "Libre Franklin", system-ui;
+}
+.body{
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.navbar{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+.navbar-brand{
+    padding-left: 150px;
+}
+
+.navbar-nav{
+    padding-right: 150px;
+
+}
+
+.navbar-custom {
+    justify-content: center;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px; /* Puedes ajustar este valor para dar más o menos espacio entre los ítems */
+  }
+  
+
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    font-family:var(--font-logo);
+    font-size: 32px;
+    line-height: 1;
+}
+
+.logo-arriba{
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
+
+.logo-abajo{
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
+
+.navbar .nav-link{
+    color:var(--color-secundario);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-quinario);
+
+}
+.navbar-toggler{
+    border-color: var(--color-secundario);
+}
