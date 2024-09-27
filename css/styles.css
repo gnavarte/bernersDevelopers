@@ -7,10 +7,35 @@
 
     --font-logo:  "Libre Franklin", system-ui;
 }
+
+h1 {
+    font-size: 5rem; 
+  }
+  
+  h2 {
+    font-size: 2rem; 
+  }
+  
+  h3 {
+    font-size: 1.75rem; 
+  }
+  
+  h4 {
+    font-size: 1.5rem; 
+  }
+  
+  h5 {
+    font-size: 1.25rem; 
+  }
+  
+  h6 {
+    font-size: 1rem; 
+}
+  
 .body{
     font-family: "Montserrat", sans-serif;
-
 }
+
 
 .navbar{
     background-color: var(--color-primario);
@@ -76,3 +101,89 @@
 .navbar-toggler{
     border-color: var(--color-secundario);
 }
+
+.container-soporte{
+    padding: 2rem;
+    background-color: var(--color-cuaternario);
+}
+
+.rectangle {
+    background-color: var(--color-primario);
+    color: var(--color-cuaternario);
+    /* 50% del alto de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    text-align: center;
+    padding:4rem;
+  }
+
+.rectangle span{
+    color: var(--color-secundario);
+}
+.contenedor-circulos{
+    background-color: var(--color-primario);
+}
+.contenedor-circulos{
+    color: var(--color-cuaternario);
+}
+.contenedor-circulos h2{
+    background-color: var(--color-secundario);
+}
+.square-container {
+    background-color: var(--color-primario);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+  .circle {
+    width: 33.33%; /* Los círculos ocuparán el 33.33% del ancho del contenedor */
+    padding-top: 33.33%; /* Mantiene la proporción del círculo */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para poder usar el padding-top para mantener proporciones */
+    margin: 10px;
+  }
+  .circle a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.9rem;
+    background-color: var(--color-secundario);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .circle {
+      width: 30%; /* Ajustar el tamaño a medida que la pantalla se achica */
+      padding-top: 30%;
+      font-size: 0.5rem;
+    }
+    .circle a {
+        font-size: 0.5rem; /* Ajuste del texto para pantallas pequeñas */
+        font-size: 0.2rem;
+      }
+    
+  }
+  @media (max-width: 480px) {
+    .circle {
+      width: 25%; /* Círculos más pequeños en pantallas pequeñas */
+      padding-top: 25%;
+      font-size: 0.1rem;
+    }
+    .circle a {
+      font-size: 0.1rem; /* Ajuste del texto para pantallas pequeñas */
+     
+    }
+  }
