@@ -6,6 +6,7 @@
     --color-quinario: #f9f3ea;
 
     --font-logo:  "Libre Franklin", system-ui;
+    --font-texto: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -263,6 +264,7 @@ h1 {
     .circle a {
         font-size: 0.5rem; 
     }
+<<<<<<< HEAD
     .contenedor-apartado-soporte {
         text-align: center; 
     }
@@ -311,3 +313,165 @@ h1 {
 }
 
 
+=======
+  }
+
+    /* Contacto */
+
+    #main-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        font-family: var(--font-texto);
+        gap: 65px;
+    }
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #contacto div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: 1px solid var(--color-primario);
+        border-radius: 8px;
+        background-color: var(--color-cuaternario);
+        padding: 32px 0;
+        gap: 10px;
+    }
+
+    #contacto div p {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    #consultas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 50px);
+        padding: 0 100px 50px 100px;
+        border: 1px solid var(--color-primario);
+        border-radius: 8px;
+        background-color: var(--color-cuaternario);
+    }
+
+    #consultas form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .form-group {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        font-size: 24px;
+        width: 400px;
+    }
+
+    .form-group input {
+        width: 100%;
+        max-width: 1120px;
+        height: 43px;
+        font-size: 32px;
+        border: 1px solid var(--color-primario);
+        border-radius: 8px;
+    }
+
+    .form-group div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1120px;
+    }
+
+    .form-group div textarea {
+        width: 100%;
+        max-width: 1120px;
+        height: 200px;
+        font-size: 32px;
+        border: 1px solid var(--color-primario);
+        border-radius: 8px;
+    }
+
+    .form-group div button {
+        width: 221px;
+        height: 43px;
+        border-radius: 8px;
+        background-color: var(--color-primario);
+        font-size: 32px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #oficina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    #oficina div {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 100%;
+    }
+
+    #oficina div iframe {
+        min-width: 860px;
+        height: 600px;
+    }
+
+    #oficina div div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #oficina div div p {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    @media (max-width: 992px) {
+        #main-contacto {
+            padding: 20px;
+            gap: 25px;
+        }
+        #contacto div p {
+            font-size: 24px;
+            text-align: center;
+        }
+        #consultas {
+            padding: 0 25px 25px 25px;
+        }
+        .form-group {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .form-group div {
+            align-items: center;
+        }
+        #oficina div {
+            flex-direction: column;
+        }
+    }
+>>>>>>> 899eb24e174bcd26dfb8dc52f412d839b59dd5e3
