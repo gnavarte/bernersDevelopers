@@ -14,7 +14,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 h1 {
@@ -44,6 +44,7 @@ h1 {
 :root {
     --color-primario: #001233;
     --color-secundario: #ff5200;
+    --color-secundario-hover: #ff8740;
     --color-terciario: #EFE0CA;
     --color-cuaternario: #F9F3EA;
     --color-quinario: #f9f3ea;
