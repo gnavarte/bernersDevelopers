@@ -3,6 +3,12 @@
     text-transform: none;
   }
 
+  .title-portfolio {
+    color: var(--color-secundario);
+    font-weight: bold;
+    margin-block: 2rem;
+  }
+
   .portfolio-item {
     flex-basis: 400px;
     background-color: var(--color-primario);
