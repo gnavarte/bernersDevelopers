@@ -103,21 +103,174 @@ h1 {
 }
 
 /* footer css */
-.footer-custom {
-    background-color: #001f3f;
-    color: white;
-    padding: 10px 0;
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-text-orange {
-    color: #FFA500;
+.content {
+    flex: 1;
+    background-image: url();
 }
-.footer-logo {
-    height: 40px;
-    filter: brightness(0) invert(1);
+
+/* Estilos del footer */
+.custom-footer {
+    background-color: var(--color-primario); /* Ajusta el color de fondo según tus necesidades */
+    padding: 20px 0; /* Ajusta el valor según la cantidad de espacio que necesites */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.custom-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-col-9, .custom-col-3 {
+    flex: 1;
+    text-align: center;
+}
+
+.custom-footer-text, .custom-small {
+    color: var(--color-secundario); /* Ajusta el color según tus necesidades */
+    white-space: nowrap; /* Asegura que el texto se muestre en una sola línea */
+}
+
+.custom-footer-logo {
+    max-width: 100px; /* Ajusta el tamaño según tus necesidades */
+    margin-left: 30px; /* Ajusta el margen según tus necesidades */
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.custom-small {
+    font-size: 0.875rem;
 }
 
 /* footer css */
+
+/* Logo contenido PAG (INICIO) */
+
+.text-center {
+  padding: 5px;
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--color-secundario);
+  text-transform: uppercase;
+}
+
+.text-center2 {
+  font-size: 42px;
+  font-weight: 450;
+  color: var(--color-secundario);
+  text-transform: uppercase;
+}
+
+/* Logo contenido PAG (INICIO) */
+
+/* Contenido PAG (INICIO) */
+
+main {
+  background-image: url(../img/Sprinkle.svg);
+}
+
+.container-izq, .container-img {
+  padding: 10px; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.container-izq {
+  margin-right: 20px; 
+  background: var(--color-cuaternario);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.container-img {
+  margin-left: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px; /* Ajusta este valor para mover la imagen más arriba */
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.content-section2 {
+  margin-top: 30px; /* Ajusta este valor según la cantidad de espacio que necesites */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Asegura que los contenedores tengan la misma altura */
+  width: 100%;
+}
+
+.texto {
+  font-size: 14px;
+  font-weight: 450;
+  text-align: left;
+  color: var(--color-primario);
+  font-size: 16px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  line-height: 1.5; /* Ajusta la altura de la línea según tus necesidades */
+  word-wrap: break-word; /* Permite que las palabras largas se dividan */
+}
+
+.col-md-6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para alinear el botón debajo */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px; /* Ajusta el margen superior del botón */
+}
+
+.btn {
+  margin-top: 20px; /* Ajusta el margen superior del botón */
+}
+
+/* Contenido PAG (INICIO)*/
 
 
 /*soporte*/
