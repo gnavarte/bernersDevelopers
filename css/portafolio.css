@@ -1,0 +1,60 @@
+/* Colores personalizados */
+:root {
+    --primary-color: #001233;
+    --secondary-color: #FF5200;
+    --secondary-hover: #ff8740;
+  }
+
+body {
+    font-family: "Montserrat", sans-serif !important
+}
+  
+  .text-center {
+    text-transform: none;
+  }
+
+  .portfolio-item {
+    flex-basis: 400px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 100%;
+  }
+  
+  .portfolio-item img {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    box-shadow: 4px 4px;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--secondary-hover);
+  }
+  
+  .disabled-btn {
+    border: none;
+    cursor: not-allowed;
+    filter: grayscale(1);
+  }
+  
+  .tech-logo {
+    max-height: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-item {
+      max-width: 100%;
+    }
+  }
+  
+  
