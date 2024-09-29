@@ -40,17 +40,6 @@ h1 {
   h6 {
     font-size: 1rem; 
 }
-  
-:root {
-    --color-primario: #001233;
-    --color-secundario: #ff5200;
-    --color-secundario-hover: #ff8740;
-    --color-terciario: #EFE0CA;
-    --color-cuaternario: #F9F3EA;
-    --color-quinario: #f9f3ea;
-    --font-logo: "Libre Franklin", system-ui;
-}
-
 
 .navbar{
     background-color: var(--color-primario);
