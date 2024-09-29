@@ -17,7 +17,7 @@ h1 {
   }
   
   h3 {
-    font-size: 1.75rem; 
+    font-size: 2.75rem; 
   }
   
   h4 {
@@ -119,7 +119,9 @@ h1 {
 
 /* footer css */
 
-.container-soporte{
+
+/*soporte*/
+.container-soporte {
     padding: 2rem;
     background-color: var(--color-cuaternario);
 }
@@ -127,48 +129,63 @@ h1 {
 .rectangle {
     background-color: var(--color-primario);
     color: var(--color-cuaternario);
-    /* 50% del alto de la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     text-align: center;
-    padding:4rem;
-  }
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 100%; 
+}
 
-.rectangle span{
+
+.rectangle span {
     color: var(--color-secundario);
 }
-.contenedor-circulos{
+
+.contenedor-circulos {
     background-color: var(--color-primario);
-}
-.contenedor-circulos{
     color: var(--color-cuaternario);
 }
-.contenedor-circulos h2{
+
+
+.contenedor-circulos h2 {
     background-color: var(--color-secundario);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--color-primario);
 }
+
+
 .square-container {
-    background-color: var(--color-primario);
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-  }
-  .circle {
-    width: 33.33%; /* Los círculos ocuparán el 33.33% del ancho del contenedor */
-    padding-top: 33.33%; /* Mantiene la proporción del círculo */
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+}
+
+
+.circle {
+    width: 30%; 
+    padding-top: 30%; 
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Para poder usar el padding-top para mantener proporciones */
+    position: relative;
     margin: 10px;
-  }
-  .circle a {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.circle a {
     position: absolute;
     color: white;
     text-decoration: none;
@@ -179,28 +196,105 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+  .contenedor-apartado-soporte{
+    margin-top: 100px;
+    text-align: start;
+
   }
-  /* Media query para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .circle {
-      width: 30%; /* Ajustar el tamaño a medida que la pantalla se achica */
-      padding-top: 30%;
-      font-size: 0.5rem;
+
+  .descrip{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-top: 120px;
+}
+
+.descrip h3{
+    color: var(--color-primario);
+    font-weight: bold;
+    text-align: left;
+}
+
+.descrip p{
+    text-align: left;
+}
+
+.tarjeta-separada {
+    margin-bottom: 200px;
+}
+/*soporte*/
+
+
+@media (max-width: 768px) {
+    .container-soporte {
+        padding: 1.5rem; 
     }
-    .circle a {
-        font-size: 0.5rem; /* Ajuste del texto para pantallas pequeñas */
-        font-size: 0.2rem;
-      }
+
+    .rectangle {
+        padding: 3rem; 
+        margin-top: 60px;
+        flex-direction: column; 
+    }
+
     
-  }
-  @media (max-width: 480px) {
+
     .circle {
-      width: 25%; /* Círculos más pequeños en pantallas pequeñas */
-      padding-top: 25%;
-      font-size: 0.1rem;
+        width: 45%; 
+        padding-top: 45%;
     }
+
     .circle a {
-      font-size: 0.1rem; /* Ajuste del texto para pantallas pequeñas */
-     
+        font-size: 0.5rem; 
     }
-  }
+    .contenedor-apartado-soporte {
+        text-align: center; 
+    }
+
+    .descrip h3 {
+        text-align: center; 
+    }
+
+    .descrip p {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .container-soporte {
+        padding: 1rem; 
+    }
+
+    .rectangle {
+        padding: 2rem; 
+        margin-top: 40px; 
+    }
+
+
+    .circle {
+        width: 80%; 
+        padding-top: 80%;
+    }
+
+    .circle a {
+        font-size: 0.5rem; 
+    }
+    .contenedor-apartado-soporte {
+        text-align: center; 
+    }
+
+    .descrip h3 {
+        text-align: center; 
+    }
+
+    .descrip p {
+        text-align: center;
+    }
+    
+}
+
+
